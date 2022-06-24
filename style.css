@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+}
+.wrapper {
+  padding: 10px;
+}
+body {
+  background-image: url('wallpaper1.webp');
+  background-size: cover;
+  font-size: 1.115rem;
+  font-family: 'Nunito', sans-serif;
+}
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 4rem;
+}
+h2 {
+  display: table;
+  font-family: 'Merienda', cursive;
+  font-size: 1.5rem;
+  color: #0050ef;
+  /* background-color: #698b8a85;
+  border-radius: 15px; */
+}
+h3 {
+  margin: 0;
+  font-family: 'Quintessential', cursive;
+  font-size: 1.2rem;
+  color: #a20025;
+}
+hr {
+  border-top: 1.6px dashed rgb(0, 0, 0);
+  margin: 10px 0px 10px 0px;
+}
+h2:hover {
+  color: black;
+}
+a:hover {
+  color: #ea2027;
+}
+.wrapper,
+.experience,
+.skillsdiv,
+.prof_languagediv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-auto-rows: max-content;
+}
+
+.skillsdiv {
+  gap: 2rem;
+}
+/* top */
+.top-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.top-section .images img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.pp {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  /* margin-left: -100px; */
+}
+.toptext {
+  align-self: start;
+  justify-self: center;
+  text-align: center;
+  margin-top: -60px;
+}
+.toptext > h1 {
+  margin: 0;
+}
+.toptext > p {
+  margin: 0;
+  font-size: 1.25rem;
+  
+}
+.contactme {
+  align-self: top;
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+.contactme a,
+span {
+  text-decoration: none;
+  color: #270082;
+}
+.contactme a:hover {
+  color: #ea2027;
+}
+.contactmeicon {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.aboutme {
+  grid-column: 1 / span 2;
+  /* background-color: #0984e350; */
+}
+.proj,
+.exp {
+  grid-column: 1 / span 2;
+}
+/* skill */
+.skillsdiv {
+  grid-column: 1 / span 2;
+}
+.skill {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 16px;
+  font-size: 0.7rem;
+}
+.bar {
+  width: 90%;
+  height: 16px;
+  border-radius: 20px;
+  background-color: rgb(207, 207, 207);
+}
+.skillsdiv p {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+/* programming skill */
+.c_cplus {
+  width: 80%;
+  background-color: #04aa6d;
+}
+.java {
+  width: 30%;
+  background-color: #00a6ff;
+}
+.py {
+  width: 80%;
+  background-color: #9c04aa;
+}
+.django {
+  width: 50%;
+  background-color: #74c905;
+}
+.html {
+  width: 90%;
+  background-color: #0c10ec;
+}
+.css {
+  width: 75%;
+  background-color: #ffc506;
+}
+.js {
+  width: 30%;
+  background-color: #ff0000;
+}
+.mysql {
+  width: 85%;
+  background-color: #f800cf;
+}
+/* professional skill */
+.professionalskills {
+  grid-column: 1 / span 2;
+}
+.ms {
+  width: 90%;
+  background-color: #111cb69f;
+}
+.teamwork {
+  width: 80%;
+  background-color: #ff599e;
+}
+.leadership {
+  width: 85%;
+  background-color: #2f4d00ea;
+}
+.time {
+  width: 90%;
+  background-color: #00b2f8;
+}
+.comminication {
+  width: 70%;
+  background-color: #92041cd3;
+}
+/* language skill */
+.languagesdiv {
+  grid-column: 1 / span 2;
+}
+.language {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 16px;
+  font-size: 0.7rem;
+}
+.bangla {
+  width: 90%;
+  background-color: #9b59b6;
+}
+.eng {
+  width: 75%;
+  background-color: #f39c12;
+}
+.hin {
+  width: 30%;
+  background-color: #ecdec8;
+}
+/* favorite */
+.favoritediv {
+  margin-top: 20px;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+@media (max-width: 600px) {
+  .favoritediv {
+    margin-top: 20px;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    
+  }
+}
+/* Used CSS Properties */
+.useddiv > h2 {
+  padding-left: 10px;
+}
+.use-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.use-table td {
+  padding: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+.use-table tr:nth-child(even) {
+  background-color: #c9c9c933;
+}
+.use-table tr:nth-child(odd) {
+  background-color: #646f7260;
+}
+.use-table td:hover {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.use-table tr:hover {
+  background-color: rgba(0, 204, 255, 0.336);
+}
+/* footer */
+.footer {
+  margin-top: 20px;
+  padding: 0 0 16px 0;
+  background-color: #2d2e2e49;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+.footer-link {
+  padding: 15px;
+}
+.fa-brands {
+  font-size: 30px;
+  color: #00ccffdc;
+}
+.fa-brands:hover {
+  color: #104761;
+}
+.topicicon {
+  color: #3d3d3d;
+  font-size: 30px;
+}
+.fa-li {
+  font-size: 14px;
+  padding-top: 6px;
+}
+.programicon {
+  color: black;
+  font-size: 25px;
+}
